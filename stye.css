@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(3, 1, 17);
+    color: azure;
+    overflow: hidden;
+}
+
+nav {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+img {
+    width: 500px;
+}
+
+div {
+    display: grid;
+    grid-row: auto;
+    width: 500px;
+    height: 80vh;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+
+button {
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+a {
+    background-color: rgb(47, 47, 47);
+    padding: 5px;
+    border-radius: 10px;
+    color: aliceblue;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.79);
+}
+footer {
+    display: flex;
+    height: 10vh;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(47, 47, 47);
+}
