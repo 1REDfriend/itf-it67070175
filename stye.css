@@ -1,8 +1,8 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(3, 1, 17);
-    color: azure;
+    background-color: rgb(244, 243, 236);
+    color: rgb(0, 0, 0);
     overflow: hidden;
 }
 
@@ -12,21 +12,24 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(47, 47, 47);
     border-radius: 10px;
     padding-right: 10px;
     padding-left: 10px;
+    height: 234px;
+    background-repeat: unset;
+    background-position: 10px;
+    background-image: url(https://ed22.engdis.com/institutions/5232957/institutionHeader.jpg);
 }
 
 img {
     width: 500px;
 }
 
-div {
+div.center{
     display: grid;
     grid-row: auto;
     width: 500px;
-    height: 80vh;
+    height: 60vh;
     justify-self: center;
     align-self: center;
     align-items: center;
@@ -47,8 +50,27 @@ a {
 }
 footer {
     display: flex;
+    flex-direction: column;
     height: 10vh;
     border-radius: 10px;
     padding: 10px;
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+footer h1 ,footer p{
+    margin: 0px;
+}
+
+.footerlink {
+    margin-top: 10px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 30px;
 }
