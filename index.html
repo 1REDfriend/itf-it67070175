@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>67070175</title>
+    <title>it67070175</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./stye.css">
 </head>
-<body>
-    <nav class="nav">
-    </nav>
-    <div class="center">
-        <img src="https://content.instructables.com/ORIG/FCB/B741/GXO0U8MU/FCBB741GXO0U8MU.jpg?frame=1" alt="">
-        <div class="login">
-            <h1>Member Login</h1>
-            <input type="text">
-            <input type="password">
-            <button>Login</button>
+
+<body class="min-h-screen">
+    <div class="flex flex-col justify-center items-center pt-10 space-y-3">
+        <h1 class=" font-bold text-2xl text-red-500">My Tom&Jerry Car Book 67070175</h1>
+        <div id="t-url" class="avatar relative bg-center bg-cover bg-[url('https://th.bing.com/th/id/R.81cdede3bbb3c286ef233448fd6cfe08?rik=N0fwTG5Qw1xU4A&pid=ImgRaw&r=0')] rounded-full outline-2 outline outline-slate-950 w-[183px] h-[183px]">
+            <span class="h-[30px] w-[30px] absolute right-2 bottom-2 rounded-full bg-red-600 text-center text-white font-bold self-center justify-self-center">1</span>
         </div>
+        <h3 id="t-username" class="text-center font-bold">Supakorn</h3>
     </div>
-    <footer>
-        <p>Copyright 2024 &copy;</p>
-        <h1>Supakorn.xyz</h1>
-        <div class="footerlink">
-            <a href="https://onlearn.it.kmitl.ac.th/pluginfile.php/60604/mod_resource/content/1/Web-Programming-1.pdf">Click Me</a>
-            <a href="https://github.com/1REDfriend">Social</a>
+    <div class="flex flex-col space-y-3 p-5 justify-center items-center">
+        <p>Set the Username <input type="text" id="username" placeholder="Your Username" class=" bg-slate-400/10 rounded-md h-7 p-2"><button id="b-username" class="bg-blue-600 text-white px-2 py-1 rounded-md ml-3">SET</button></p>
+        <p>Set the profile image URL <input type="text" id="url"  placeholder="Your URL" class=" bg-slate-400/10 rounded-md h-7 p-2"><button id="b-url" class="bg-blue-600 text-white px-2 py-1 rounded-md ml-3">SET</button></p>
+    </div>
+    <div class="flex flex-col items-center space-y-3">
+        <h1 class="text-center font-bold">Phone List</h1>
+        <div class="flex-row">
+            <input type="text" id="p-name" placeholder="Name" class=" bg-slate-400/10 rounded-md h-7 p-2">
+            <input type="text" id="p-number" placeholder="Phone Number" class=" bg-slate-400/10 rounded-md h-7 p-2">
+            <button id="b-phone" class="bg-blue-600 text-white px-2 py-1 rounded-md ml-3">SET</button>
         </div>
-    </footer>
+        <table class="bg-gray-600/10 rounded-md w-[80%] table-auto">
+            <thead class="bg-slate-500/25">
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody id="tb-phone">
+                <tr>
+                    <td>1</td>
+                    <td>Hello</td>
+                    <td>0999999999</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>
